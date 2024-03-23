@@ -56,28 +56,16 @@ This is a Python application that allows you to encrypt and decrypt documents se
 1. Install PyInstaller if you haven't already:
 
    ```
-   pip install pyinstaller
+   pip install cx_Freeze
    ```
 
 2. Use PyInstaller to create an executable for the application:
 
-   For Windows:
-
    ```
-   pyinstaller --onefile --windowed --icon=icon.ico encrypt.py
-   pyinstaller --onefile --windowed --icon=icon.ico decrypt.py
+   python setup.py build
    ```
 
-   For Linux:
-
-   ```
-   pyinstaller --onefile --windowed --icon=icon.ico encrypt.py
-   pyinstaller --onefile --windowed --icon=icon.ico decrypt.py
-   ```
-
-   Replace `icon.ico` with the path to your custom icon file.
-
-3. The executable will be created in the `dist` directory.
+3. The executable will be created in the `build` directory.
 
 ## License
 
